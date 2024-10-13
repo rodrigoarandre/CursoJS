@@ -1,0 +1,13 @@
+let nome = prompt('Insira seu nome completo: ');
+nome = nome.toLowerCase();
+document.body.innerHTML = `Seja bem-vndo ${nome} <br />`;
+let nomeDividido = nome.split(' ');
+document.body.innerHTML += `Seu primeiro nome é: <strong>${nomeDividido[0]}</strong> <br />`;
+document.body.innerHTML += `Seu nome tem <strong>${nome.length}</strong> letras <br />`;
+document.body.innerHTML += `A segunda letra do seu nome é <strong>${nome[1]}</strong> <br />`;
+document.body.innerHTML += `O primeiro índice da letra R no seu nome é: <Strong>${nome.indexOf('r')}</strong> <br />`;
+document.body.innerHTML += `O ultimo índice da letra R no seu nome é: <strong>${nome.lastIndexOf('r')}</strong> <br />`;
+document.body.innerHTML += `As 3 últimas letras do seu nome é: <strong>${nome.slice(-3)}</strong> <br />`;
+document.body.innerHTML += `As palavras do seu nome são: <strong>${nome.split(' ')}</strong>  <br />`;
+document.body.innerHTML += `Seu nome com Letra Maiúscula: <strong>${nome.toUpperCase()}</strong> <br />`;
+document.body.innerHTML += `Seu nome com letra minúscula: <strong>${nome.toLowerCase()}</strong> <br />`;
